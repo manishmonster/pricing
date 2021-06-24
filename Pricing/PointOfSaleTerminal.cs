@@ -53,7 +53,7 @@ namespace Pricing
 
         public void ScanProduct(string text)
         {
-
+            text = text.ToUpper();
             foreach (char ch in text)
             {
                 if (pricedistory.ContainsKey(ch.ToString()) == false)
